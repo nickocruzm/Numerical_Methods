@@ -4,5 +4,3 @@ Numerical Analysis
 
 ## Runge-Kutta Method
 
-
-
