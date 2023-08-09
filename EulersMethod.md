@@ -10,7 +10,7 @@ equation above in a less intimidating form.
 
 $$ y_{n+1} = y_{n} + h(f_{n})$$
 
-## Example 1
+## Example
 
 Suppose we are given an I.V.P[^1]. First-order differential given $y^{'} = y$ along with its initial value $y(0) = 1$ and a step size $h = 1.0$. When it comes to differentials, I need to list things out explicity, too many implicit notation going on when it comes to differentials.
 
