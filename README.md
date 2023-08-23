@@ -2,4 +2,7 @@
 
 Numerical Methods written in C++
 
-  - [Eulers Method](/docs/EulersMethod.md)
+## Euler's Method
+
+  - [Instructions](/docs/EU_Instructions.md)
+  - [Math](/docs/EulersMethod.md)

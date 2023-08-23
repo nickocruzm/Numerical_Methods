@@ -1,6 +1,6 @@
-# Euler's Method
+# Euler's Method Example
 
-Used to analyze Differential Equations. The method explicitly is written below,
+Used to analyze Differential Equations. An example of applying Eulers method is below.
 
 $$ y_{n+1} = y_{n} + f(t_{n},y_{n})(t_{n+1} - t_{n})$$
 
@@ -14,25 +14,35 @@ $$ y_{n+1} = y_{n} + h(f_{n})$$
 
 Suppose we are given an I.V.P[^1]. First-order differential given $y^{'} = y$ along with its initial value $y(0) = 1$ and a step size $h = 1.0$. When it comes to differentials, I need to list things out explicity, too many implicit notation going on when it comes to differentials.
 
-** Given [^2]**
+**Given [^2]**
+
 - $t_{0} = 0$
-- $y_{0} = y(t_{0}) = y(0) = 1$
-- $y^{'} = \frac{dy}{dt} = f(t_{n},y_{n})$
-- $f(t_{n},y_{n}) = y_{n}$
-- $f(t_{0},y_{0}) = y_{0} = 1 $
-- $h = (t_{n+1} - t_{n}) = 1 $
+- $y_{0} = y(t_{0})$, $y(0) = 1$
+- $y^{'} = f(t_{n}, y_{n})$
+- $f( t_{n}, y_{n} ) = y_{n}$
+- $f(t_{0},y_{0}) = y_{0}$
+- $h = (t_{n+1} - t_{n})$
+- $h = 1$
 
 $$f(t_{0},y_{0}) = f(0,1) = 1$$
 
 now we can apply Euler's Method to find $y_{1}$
 
-$$y_{1} = y_{0} + h(f(t_{0},y_{0}) = 1 + 1(f(0,1)) = 1 + 1 = 2, y_{1} = 2 $$
+$$y_{1} = y_{0} + h(f(t_{0},y_{0}))$$
+$$ y_{0} + h (f(t_{0},y_{0})) = 1 + f(0,1)$$
+$$1 + f(0,1) = 2$$
+$$y_{1} = 2$$
 
-$$y_{2} = y_{1} + h(f(t_{1} ,y_{1})) = 2 + 1(f(t_1,y_1)) = 2 + 1(f(y_1)) = 2 + 2 = 4 $$ [^3]
+find $y_{2}$
+$$y_{2} = y_{1} + h(f(t_{1} ,y_{1}))$$
+$$      = 2 + f(t_1,y_1)$$
+$$      = 2 + (f(y_1))$$
+$$      = 4$$
 
-$$ y_{3} = y_{2} + 1(y_{2}) = 8 $$
+lastly find $y_{3}, y_{4}$
+$$ y_{3} = y_{2} + (y_{2}) = 8 $$
 
-$$ y_{4} = y_{3} + 1(y_{3}) = 16$$
+$$ y_{4} = y_{3} + (y_{3}) = 16$$
 
 
 

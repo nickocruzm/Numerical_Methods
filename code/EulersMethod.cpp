@@ -9,12 +9,12 @@ int main(){
     float x0, y0, xn, h, yn, slope;
     int i, n;
 
-    cout<<"Enter Initial Condition"<< endl;
+    cout<<"Initial Condition"<< endl;
     cout<<"x0 = ";
     cin>> x0;
     cout<<"y0 = ";
     cin >> y0;
-    cout<<"Enter calculation point xn = ";
+    cout<<"xn = ";
     cin>>xn;
     cout<<"Enter number of steps: ";
     cin>> n;
@@ -36,7 +36,7 @@ int main(){
     }
 
     /* Displaying result */
-    cout<<"\nValue of y at x = "<< xn<< " is " << yn;
+    cout<<"\nValue of y at x = "<< xn<< " is " << yn<< endl;
 
     return 0;
 };
