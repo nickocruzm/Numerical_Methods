@@ -37,8 +37,9 @@ $$y_{1} = 2$$
 find $y_{2}$
 $$y_{2} = y_{1} + h(f(t_{1} ,y_{1}))$$
 $$      = 2 + f(t_1,y_1)$$
-$$      = 2 + (f(y_1))$$
-$$      = 4$$
+$$      = 2 + (f(y_1))=4$$
+[^3]
+
 
 lastly find $y_{3}, y_{4}$
 $$ y_{3} = y_{2} + (y_{2}) = 8 $$
@@ -49,5 +50,5 @@ $$ y_{4} = y_{3} + (y_{3}) = 16$$
 
 [^1]: Initial Value Problem
 [^2]: information that was given to us in the problem's description.
-[^3]: Our differential is defined to not be dependent on (t), so we don't really care what the value of t is which is why it 'disappears'. Plug in any value for (t) and it won't effect the output
+[^3]: In the last line afte find y2. Our differential is defined to not be dependent on (t), so we don't really care what the value of t is which is why it 'disappears'. Plug in any value for (t) and it won't effect the output
 
