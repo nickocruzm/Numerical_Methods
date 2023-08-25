@@ -1,6 +1,6 @@
 # Euler's Method Example
 
-Used to analyze Differential Equations. An example of applying Eulers method is below.
+An example of applying Eulers method is below.
 
 $$ y_{n+1} = y_{n} + f(t_{n},y_{n})(t_{n+1} - t_{n})$$
 
@@ -12,12 +12,13 @@ $$ y_{n+1} = y_{n} + h(f_{n})$$
 
 ## Example
 
-Suppose we are given an I.V.P[^1]. First-order differential given $y^{'} = y$ along with its initial value $y(0) = 1$ and a step size $h = 1.0$. When it comes to differentials, I need to list things out explicity, too many implicit notation going on when it comes to differentials.
+Suppose we are given an I.V.P[^1]. First-order differential given $y^{'} = y$ along with its initial value $y(0) = 1$ and a step size $h = 1.0$. When it comes to differentials sublte notation making it easy to confuse/miss some crucial information. I usually like to list things out explicity, to avoid this.
+
+Let $y^{'} =f(t_{n},y_{n})$ where $f(t_{n},y_{n}) = y_{n}$
 
 **Given [^2]**
 
-- $t_{0} = 0$
-- $y_{0} = y(t_{0})$, $y(0) = 1$
+- Initial Condition: $ y_{0} = 1$
 - $y^{'} = f(t_{n}, y_{n})$
 - $f( t_{n}, y_{n} ) = y_{n}$
 - $f(t_{0},y_{0}) = y_{0}$
