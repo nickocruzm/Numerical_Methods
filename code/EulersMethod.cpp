@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-#define f(x,y) x+y
+#define f(x,y) x+y;
 
 using namespace std;
 
@@ -26,13 +26,12 @@ int main(){
     cout<<"\nx0\ty0\tslope\tyn\n";
     cout<<"------------------------------\n";
 
-    for(i=0; i < n; i++)
-    {
-    slope = f(x0, y0);
-    yn = y0 + h * slope;
-    cout<< x0<<"\t"<< y0<<"\t"<< slope<<"\t"<< yn<< endl;
-    y0 = yn;
-    x0 = x0+h;
+    for(i=0; i < n; i++){
+        slope = f(x0, y0);
+        yn = y0 + h * slope;
+        cout<< x0<<"\t"<< y0<<"\t"<< slope<<"\t"<< yn<< endl;
+        y0 = yn;
+        x0 = x0+h;
     }
 
     /* Displaying result */
