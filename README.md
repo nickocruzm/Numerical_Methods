@@ -6,3 +6,10 @@ Numerical Methods written in C++
 
   - [Instructions](/docs/EU_Instructions.md)
   - [Math](/docs/EulersMethod.md)
+
+# MA135B
+
+Numerical Analysis
+
+## Runge-Kutta Method
+
