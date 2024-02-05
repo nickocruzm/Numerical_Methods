@@ -4,19 +4,18 @@ An example of applying Eulers method is below.
 
 $$ y_{n+1} = y_{n} + f(t_{n},y_{n})(t_{n+1} - t_{n})$$
 
-Personally, I'm not a fan of the above equation.
-Generally we assume the step sizes $h = (t_{n+1} - t_{n})$ are uniform. If we allow $f_{n} = f(t_{n},y_{n})$ then we can rewrite the 
+[^1] Generally we assume the step sizes $h = (t_{n+1} - t_{n})$ are uniform. If we allow $f_{n} = f(t_{n},y_{n})$ then we can rewrite the 
 equation above in a less intimidating form. 
 
 $$ y_{n+1} = y_{n} + h(f_{n})$$
 
 ## Example
 
-Suppose we are given an I.V.P[^1]. First-order differential given $y^{'} = y$ along with its initial value $y(0) = 1$ and a step size $h = 1.0$. When it comes to differentials sublte notation making it easy to confuse/miss some crucial information. I usually like to list things out explicity, to avoid this.
+Suppose we are given an I.V.P[^2]. First-order differential given $y^{'} = y$ along with its initial value $y(0) = 1$ and a step size $h = 1.0$. When it comes to differentials sublte notation making it easy to confuse/miss some crucial information. I usually like to list things out explicity, to avoid this.
 
 Let $y^{'} =f(t_{n},y_{n})$ where $f(t_{n},y_{n}) = y_{n}$
 
-**Given [^2]**
+**Given [^3]**
 
 - Initial Condition: $ y_{0} = 1$
 - $y^{'} = f(t_{n}, y_{n})$
@@ -38,7 +37,7 @@ find $y_{2}$
 $$y_{2} = y_{1} + h(f(t_{1} ,y_{1}))$$
 $$      = 2 + f(t_1,y_1)$$
 $$      = 2 + (f(y_1))=4$$
-[^3]
+[^4]
 
 
 lastly find $y_{3}, y_{4}$
@@ -47,8 +46,8 @@ $$ y_{3} = y_{2} + (y_{2}) = 8 $$
 $$ y_{4} = y_{3} + (y_{3}) = 16$$
 
 
-
-[^1]: Initial Value Problem
-[^2]: information that was given to us in the problem's description.
-[^3]: In the last line afte find y2. Our differential is defined to not be dependent on (t), so we don't really care what the value of t is which is why it 'disappears'. Plug in any value for (t) and it won't effect the output
+[^1]: Personally, I'm not a fan of how the equation above is presented.
+[^2]: Initial Value Problem
+[^3]: information that was given to us in the problem's description.
+[^4]: In the last line afte find y2. Our differential is defined to not be dependent on (t), so we don't really care what the value of t is which is why it 'disappears'. Plug in any value for (t) and it won't effect the output
 
